@@ -13,4 +13,11 @@ public class Instrument extends Fonds{
     }
     
     public void Instrument(){}
+    public void Instrument(ArrayList<Fonds> fonds){
+        this.fonds = fonds;
+    }
+    
+    public void addFonds(){
+        fonds.add();
+    }
 }

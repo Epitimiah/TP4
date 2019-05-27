@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package main;
 
 /**
@@ -17,4 +12,7 @@ public class Fonds {
     }
     
     public void Fonds(){}
+    public void Fonds(double amount){
+        this.amount = amount;
+    }
 }

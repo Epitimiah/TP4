@@ -18,7 +18,7 @@ public class Portefeuille {
     }
     
     public void Portefeuille(){
-        getFondsMap();
-        getInstruMap();
+        fondsMap = new HashMap<>();
+        instrumentsMap = new HashMap<>();
     }
 }
