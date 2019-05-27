@@ -50,7 +50,7 @@ public class Main {
         
         /** Test ajouter instrument **/
         scan.nextLine();
-        println("Ajouter un nouveau fond a un instrument.");
+        println("Ajouter un nouvel instrument.");
         println("Clef de l'instrument ? ");
         s = scan.nextLine();
         
