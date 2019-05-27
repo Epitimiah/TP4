@@ -6,7 +6,7 @@ import java.util.*;
  * @author 
  */
 public class Portefeuille{
-    public HashMap<String, Fonds> fondsMap;
+    private HashMap<String, Fonds> fondsMap;
     private HashMap<String, Instrument> instrumentsMap;
     
     public HashMap<String, Fonds> getFondsMap(){
