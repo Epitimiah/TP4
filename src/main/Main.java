@@ -68,7 +68,6 @@ public class Main {
         } 
         
         /** Test supprimer fonds **/
-        scan.nextLine();
         println("Supprimer un fonds de la hashmap.");
         println("Clef du fonds ? ");
         s = scan.nextLine();
@@ -82,7 +81,6 @@ public class Main {
         }    
         
         /** Test supprimer instrument **/
-        scan.nextLine();
         println("Supprimer un instrument de la hashmap.");
         println("Clef de l'instrument ? ");
         s = scan.nextLine();
