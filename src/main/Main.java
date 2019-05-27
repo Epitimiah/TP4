@@ -30,6 +30,7 @@ public class Main {
         }
         /* FINI */
         
+        /** Test ajouter fonds **/
         println("Ajouter un nouveau fond.");
         println("Clef ? ");
         String s = scan.nextLine();
@@ -47,6 +48,7 @@ public class Main {
             }   
         }
         
+        /** Test ajouter instrument **/
         scan.nextLine();
         println("Ajouter un nouveau fond a un instrument.");
         println("Clef de l'instrument ? ");
@@ -63,7 +65,35 @@ public class Main {
             } catch (InstrumentExistant ex1) {
                 println(ex1.toString());
             }
-        }   
+        } 
+        
+        /** Test supprimer fonds **/
+        scan.nextLine();
+        println("Supprimer un fonds de la hashmap.");
+        println("Clef du fonds ? ");
+        s = scan.nextLine();
+        
+        try {
+            p.rechercheFonds(s);
+            p.supprFondsMap(s);
+            println("Le fonds " + s + " a ete supprime."); 
+        } catch (FondsInexistant ef) {
+            println("Le fonds n'existe pas.");
+        }    
+        
+        /** Test supprimer instrument **/
+        scan.nextLine();
+        println("Supprimer un instrument de la hashmap.");
+        println("Clef de l'instrument ? ");
+        s = scan.nextLine();
+        
+        try {
+            p.rechercheInstrument(s);
+            p.supprInstrMap(s);
+            println("L'instrument " + s + " a ete supprime.");
+        } catch (InstrumentInexistant ei) {           
+            println("L'instrument n'existe pas.");
+        }       
     }
     
 }
