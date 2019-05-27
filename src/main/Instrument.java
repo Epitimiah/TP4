@@ -27,4 +27,8 @@ public class Instrument {
     public void clearFonds() {
         fonds.clear();
     }
+    
+    public void tri() {
+        Collections.sort(fonds, new FondsComparator());
+    }
 }

@@ -4,7 +4,7 @@ package main;
  *
  * @author 
  */
-public class Fonds{
+public class Fonds implements Comparable<Fonds> {
     private double amount;
     
     public double getAmount(){
@@ -16,4 +16,18 @@ public class Fonds{
     }
     
     public Fonds(){}
+
+    @Override
+    public int compareTo(Fonds o) {
+        if (o.getAmount() < this.amount)
+            return 1;
+        if (o.getAmount() > this.amount)
+            return -1;
+        return 0;
+    }
+    
+    @Override
+    public boolean equals(Object o) {
+        return o instanceof Fonds && ((Fonds) o).getAmount() == this.amount;
+    }
 }
